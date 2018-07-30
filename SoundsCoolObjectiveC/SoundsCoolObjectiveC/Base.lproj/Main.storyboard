@@ -39,12 +39,55 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongsTableViewCell" id="VJv-9J-ft1">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongsTableViewCell" rowHeight="104" id="VJv-9J-ft1">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VJv-9J-ft1" id="Fe7-k8-G5o">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="103.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HwH-Q0-Soz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="103"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="103" id="2Kg-f4-VBQ"/>
+                                                        <constraint firstAttribute="width" constant="115" id="TBq-Yw-RVW"/>
+                                                        <constraint firstAttribute="width" secondItem="HwH-Q0-Soz" secondAttribute="height" multiplier="115:103" id="tPw-Xx-mZ2"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Blonde (2016)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-3U-YM9">
+                                                    <rect key="frame" x="123" y="75" width="244" height="19"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Franky Ocean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1c-89-3hX">
+                                                    <rect key="frame" x="123" y="6" width="244" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Nights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcN-Ji-fnF">
+                                                    <rect key="frame" x="123" y="43" width="245" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="m7K-3U-YM9" secondAttribute="bottom" constant="9.5" id="1Q7-tz-9eA"/>
+                                                <constraint firstItem="J1c-89-3hX" firstAttribute="leading" secondItem="HwH-Q0-Soz" secondAttribute="trailing" constant="8" id="1V2-9F-Ms1"/>
+                                                <constraint firstAttribute="trailing" secondItem="J1c-89-3hX" secondAttribute="trailing" constant="8" id="AkY-pe-0Ud"/>
+                                                <constraint firstItem="m7K-3U-YM9" firstAttribute="top" secondItem="pcN-Ji-fnF" secondAttribute="bottom" constant="12" id="DY3-pI-bGR"/>
+                                                <constraint firstItem="J1c-89-3hX" firstAttribute="top" secondItem="Fe7-k8-G5o" secondAttribute="top" constant="6" id="HnJ-u0-plV"/>
+                                                <constraint firstAttribute="bottom" secondItem="HwH-Q0-Soz" secondAttribute="bottom" id="RoI-cF-aQc"/>
+                                                <constraint firstItem="pcN-Ji-fnF" firstAttribute="top" secondItem="J1c-89-3hX" secondAttribute="bottom" constant="8" id="Xw6-U0-wnF"/>
+                                                <constraint firstAttribute="trailing" secondItem="pcN-Ji-fnF" secondAttribute="trailing" constant="7" id="caS-Zl-P1r"/>
+                                                <constraint firstItem="HwH-Q0-Soz" firstAttribute="top" secondItem="Fe7-k8-G5o" secondAttribute="top" id="fyO-B1-T8m"/>
+                                                <constraint firstAttribute="trailing" secondItem="m7K-3U-YM9" secondAttribute="trailing" constant="8" id="ltf-bS-TqV"/>
+                                                <constraint firstItem="m7K-3U-YM9" firstAttribute="leading" secondItem="HwH-Q0-Soz" secondAttribute="trailing" constant="8" id="mpl-ke-cYI"/>
+                                                <constraint firstItem="HwH-Q0-Soz" firstAttribute="leading" secondItem="Fe7-k8-G5o" secondAttribute="leading" id="oBZ-ut-erV"/>
+                                                <constraint firstItem="pcN-Ji-fnF" firstAttribute="leading" secondItem="HwH-Q0-Soz" secondAttribute="trailing" constant="8" id="wMU-q1-AIO"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="imw-f1-wMi" kind="push" id="078-to-BR2"/>
@@ -75,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-422" y="93"/>
+            <point key="canvasLocation" x="-423.19999999999999" y="92.203898050974516"/>
         </scene>
         <!--Song Details-->
         <scene sceneID="cHi-Gv-kMV">
