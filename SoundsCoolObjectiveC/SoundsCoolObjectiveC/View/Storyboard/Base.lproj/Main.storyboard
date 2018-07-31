@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongsTableViewCell" rowHeight="104" id="VJv-9J-ft1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongsTableViewCell" rowHeight="104" id="VJv-9J-ft1" customClass="SongsCustomCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VJv-9J-ft1" id="Fe7-k8-G5o">
@@ -90,6 +90,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="artistName" destination="J1c-89-3hX" id="69Y-zH-wfa"/>
+                                            <outlet property="songAlbum" destination="m7K-3U-YM9" id="QLy-Mz-HmL"/>
+                                            <outlet property="songArtImage" destination="HwH-Q0-Soz" id="wGW-wf-UPi"/>
+                                            <outlet property="songTitle" destination="pcN-Ji-fnF" id="LUT-I6-aoT"/>
                                             <segue destination="imw-f1-wMi" kind="push" id="078-to-BR2"/>
                                         </connections>
                                     </tableViewCell>
@@ -123,7 +127,7 @@
         <!--Song Details-->
         <scene sceneID="cHi-Gv-kMV">
             <objects>
-                <viewController id="imw-f1-wMi" sceneMemberID="viewController">
+                <viewController id="imw-f1-wMi" customClass="SongDetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CaU-FC-tgz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -326,6 +330,16 @@ Hope you're…</string>
                     <navigationItem key="navigationItem" title="Song Details" id="ykV-y8-Veq">
                         <barButtonItem key="backBarButtonItem" title="songs list" id="2Fy-QI-gly"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="albumImage" destination="gcf-VB-YTd" id="ttL-Ym-hhq"/>
+                        <outlet property="albumTitleTextView" destination="6ml-cT-UqZ" id="GaH-R1-8hN"/>
+                        <outlet property="artistTextView" destination="LWM-Pw-qgn" id="4IG-Rr-3Lp"/>
+                        <outlet property="lyricsTextView" destination="lqw-Wz-l1Z" id="suI-36-M2c"/>
+                        <outlet property="producerTextView" destination="6TU-z4-YJ3" id="GFJ-z9-O0E"/>
+                        <outlet property="recordLabelTextView" destination="bzE-YF-HiE" id="oD9-Xs-Gs2"/>
+                        <outlet property="songTitleTextView" destination="e3A-cI-dMB" id="aV4-Zp-d3T"/>
+                        <outlet property="yearTextView" destination="OBV-Hl-r1b" id="4ly-TO-xRA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACU-aq-vyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

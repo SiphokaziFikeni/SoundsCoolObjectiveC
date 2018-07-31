@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "SongsViewModel.h"
 
 @interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 {
 
     IBOutlet UITableView *songsTableView;
     NSMutableArray *songArray;
+    SongsViewModel* songsViewModel;
 }
 @end
 

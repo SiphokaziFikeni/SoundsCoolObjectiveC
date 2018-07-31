@@ -15,6 +15,13 @@
 		A01688042109FE1C002B1072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01688032109FE1C002B1072 /* main.m */; };
 		A016880E2109FE1C002B1072 /* SoundsCoolObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A016880D2109FE1C002B1072 /* SoundsCoolObjectiveCTests.m */; };
 		A01688192109FE1C002B1072 /* SoundsCoolObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A01688182109FE1C002B1072 /* SoundsCoolObjectiveCUITests.m */; };
+		A0D73FE4210EFE80006CBC9E /* SongsCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FE3210EFE80006CBC9E /* SongsCustomCell.m */; };
+		A0D73FEE210F2C13006CBC9E /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FED210F2C13006CBC9E /* Song.m */; };
+		A0D73FF1210F2C38006CBC9E /* SongsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FF0210F2C38006CBC9E /* SongsViewModel.m */; };
+		A0D73FF4210F2C4E006CBC9E /* SongViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FF3210F2C4E006CBC9E /* SongViewModel.m */; };
+		A0D73FF7210F2C5C006CBC9E /* Songs.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FF6210F2C5C006CBC9E /* Songs.m */; };
+		A0D73FFA210F2C84006CBC9E /* SongsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FF9210F2C84006CBC9E /* SongsRepository.m */; };
+		A0D73FFD210F2CC0006CBC9E /* SongDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FFC210F2CC0006CBC9E /* SongDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,20 @@
 		A01688142109FE1C002B1072 /* SoundsCoolObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundsCoolObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01688182109FE1C002B1072 /* SoundsCoolObjectiveCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundsCoolObjectiveCUITests.m; sourceTree = "<group>"; };
 		A016881A2109FE1C002B1072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D73FE2210EFE80006CBC9E /* SongsCustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongsCustomCell.h; sourceTree = "<group>"; };
+		A0D73FE3210EFE80006CBC9E /* SongsCustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongsCustomCell.m; sourceTree = "<group>"; };
+		A0D73FEC210F2C13006CBC9E /* Song.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		A0D73FED210F2C13006CBC9E /* Song.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		A0D73FEF210F2C38006CBC9E /* SongsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongsViewModel.h; sourceTree = "<group>"; };
+		A0D73FF0210F2C38006CBC9E /* SongsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongsViewModel.m; sourceTree = "<group>"; };
+		A0D73FF2210F2C4E006CBC9E /* SongViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongViewModel.h; sourceTree = "<group>"; };
+		A0D73FF3210F2C4E006CBC9E /* SongViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongViewModel.m; sourceTree = "<group>"; };
+		A0D73FF5210F2C5C006CBC9E /* Songs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Songs.h; sourceTree = "<group>"; };
+		A0D73FF6210F2C5C006CBC9E /* Songs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Songs.m; sourceTree = "<group>"; };
+		A0D73FF8210F2C84006CBC9E /* SongsRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongsRepository.h; sourceTree = "<group>"; };
+		A0D73FF9210F2C84006CBC9E /* SongsRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongsRepository.m; sourceTree = "<group>"; };
+		A0D73FFB210F2CC0006CBC9E /* SongDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongDetailsViewController.h; sourceTree = "<group>"; };
+		A0D73FFC210F2CC0006CBC9E /* SongDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +122,13 @@
 		A01687F32109FE1B002B1072 /* SoundsCoolObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				A0D73FE8210F28A6006CBC9E /* ViewModel */,
+				A0D73FE7210F288F006CBC9E /* Repository */,
+				A0D73FE6210F2889006CBC9E /* View */,
+				A0D73FE5210F287F006CBC9E /* Model */,
 				A01687F42109FE1B002B1072 /* AppDelegate.h */,
 				A01687F52109FE1B002B1072 /* AppDelegate.m */,
-				A01687F72109FE1B002B1072 /* ViewController.h */,
-				A01687F82109FE1B002B1072 /* ViewController.m */,
-				A01687FA2109FE1B002B1072 /* Main.storyboard */,
 				A01687FD2109FE1C002B1072 /* Assets.xcassets */,
-				A01687FF2109FE1C002B1072 /* LaunchScreen.storyboard */,
 				A01688022109FE1C002B1072 /* Info.plist */,
 				A01688032109FE1C002B1072 /* main.m */,
 			);
@@ -130,6 +151,76 @@
 				A016881A2109FE1C002B1072 /* Info.plist */,
 			);
 			path = SoundsCoolObjectiveCUITests;
+			sourceTree = "<group>";
+		};
+		A0D73FE5210F287F006CBC9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0D73FEC210F2C13006CBC9E /* Song.h */,
+				A0D73FED210F2C13006CBC9E /* Song.m */,
+				A0D73FF5210F2C5C006CBC9E /* Songs.h */,
+				A0D73FF6210F2C5C006CBC9E /* Songs.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0D73FE6210F2889006CBC9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0D73FEB210F28EA006CBC9E /* ViewClasses */,
+				A0D73FEA210F28D7006CBC9E /* ViewController */,
+				A0D73FE9210F28CA006CBC9E /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0D73FE7210F288F006CBC9E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A0D73FF8210F2C84006CBC9E /* SongsRepository.h */,
+				A0D73FF9210F2C84006CBC9E /* SongsRepository.m */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A0D73FE8210F28A6006CBC9E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0D73FEF210F2C38006CBC9E /* SongsViewModel.h */,
+				A0D73FF0210F2C38006CBC9E /* SongsViewModel.m */,
+				A0D73FF2210F2C4E006CBC9E /* SongViewModel.h */,
+				A0D73FF3210F2C4E006CBC9E /* SongViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0D73FE9210F28CA006CBC9E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A01687FA2109FE1B002B1072 /* Main.storyboard */,
+				A01687FF2109FE1C002B1072 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A0D73FEA210F28D7006CBC9E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A01687F72109FE1B002B1072 /* ViewController.h */,
+				A01687F82109FE1B002B1072 /* ViewController.m */,
+				A0D73FFB210F2CC0006CBC9E /* SongDetailsViewController.h */,
+				A0D73FFC210F2CC0006CBC9E /* SongDetailsViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A0D73FEB210F28EA006CBC9E /* ViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				A0D73FE2210EFE80006CBC9E /* SongsCustomCell.h */,
+				A0D73FE3210EFE80006CBC9E /* SongsCustomCell.m */,
+			);
+			path = ViewClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +353,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D73FF4210F2C4E006CBC9E /* SongViewModel.m in Sources */,
+				A0D73FEE210F2C13006CBC9E /* Song.m in Sources */,
 				A01687F92109FE1B002B1072 /* ViewController.m in Sources */,
+				A0D73FE4210EFE80006CBC9E /* SongsCustomCell.m in Sources */,
+				A0D73FF7210F2C5C006CBC9E /* Songs.m in Sources */,
+				A0D73FFA210F2C84006CBC9E /* SongsRepository.m in Sources */,
+				A0D73FFD210F2CC0006CBC9E /* SongDetailsViewController.m in Sources */,
+				A0D73FF1210F2C38006CBC9E /* SongsViewModel.m in Sources */,
 				A01688042109FE1C002B1072 /* main.m in Sources */,
 				A01687F62109FE1B002B1072 /* AppDelegate.m in Sources */,
 			);
