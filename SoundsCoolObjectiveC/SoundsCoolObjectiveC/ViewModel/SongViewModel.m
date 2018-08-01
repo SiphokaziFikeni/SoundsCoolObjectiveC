@@ -10,14 +10,14 @@
 
 @implementation SongViewModel
 
-    -(id)init:(NSString*) songId {
+    -(id)init:(int)songIndex {
         self = [super init];
         if (!self) {
             return nil;
         }
         
         self.songsRepo = [[SongsRepository alloc] init];
-        self.song = [self.songsRepo getSongBy:songId];
+        self.song = [self.songsRepo getSongBy:songIndex];
         
         return self;
     }

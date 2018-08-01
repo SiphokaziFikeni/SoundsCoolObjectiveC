@@ -16,7 +16,7 @@
    @property NSString* dummyLyrics;
 
     -(id)init;
-    -(Song* )getSongBy: (NSString*) songId;
+    -(Song* )getSongBy: (int) songIndex;
     -(NSMutableArray<Song*> *)getAllSongs;
 
 @end

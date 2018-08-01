@@ -19,7 +19,7 @@
     @property (strong, nonatomic) IBOutlet UITextView *producerTextView;
     @property (strong, nonatomic) IBOutlet UITextView *recordLabelTextView;
     @property (strong, nonatomic) IBOutlet UITextView *lyricsTextView;
-    @property NSString* selectedSongIndex;
+    @property int selectedSongIndex;
     @property SongViewModel* songViewModel;
 
     -(void)showSongDetails;

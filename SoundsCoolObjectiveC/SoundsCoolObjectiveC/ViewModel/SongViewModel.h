@@ -15,7 +15,7 @@
     @property SongsRepository* songsRepo;
     @property Song* song;
 
-    -(id)init:(NSString*) songId;
+    -(id)init:(int)songIndex;
     -(UIImage*)image;
     -(NSString*)artist;
     -(NSString*)title;

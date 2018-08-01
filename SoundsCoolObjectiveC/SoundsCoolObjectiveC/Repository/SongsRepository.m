@@ -17,33 +17,33 @@
             return nil;
         }
         self.dummyLyrics = @"Round the city\
-                            Round the clock\
-                            Everybody needs you\
-                            No you can't make everybody equal\
-                            Although you got beaucoup family\
-                            You don't even got nobody being honest with you\
-                            Breath till I evaporated\
-                            My whole body see through\
-                            Transportation, handmade\
-                            And I know it better than most people\
-                            I don't trust them anyways\
-                            You can't break the law with them\
-                            Get some pussy have a calm night\
-                            Shooters killing left and right\
-                            Working through your worst night\
-                            If I get my money right\
-                            You know I won't need you\
-                            And I tell you, (bitch)\
-                            I hope the sack is full up\
-                            I'm fuckin', no I'm fucked up\
-                            Spend it when I get that\
-                            I ain't trying to keep you\
-                            Can't keep up a conversation\
-                            Can't nobody reach you\
-                            Why your eyes well up\
-                            Did you call me from a seance\
-                            You are from a past life\
-                            Hope you're…";
+                            \nRound the clock\
+                            \nEverybody needs you\
+                            \nNo you can't make everybody equal\
+                            \nAlthough you got beaucoup family\
+                            \nYou don't even got nobody being honest with you\
+                            \nBreath till I evaporated\
+                            \nMy whole body see through\
+                            \nTransportation, handmade\
+                            \nAnd I know it better than most people\
+                            \nI don't trust them anyways\
+                            \nYou can't break the law with them\
+                            \nGet some pussy have a calm night\
+                            \nShooters killing left and right\
+                            \nWorking through your worst night\
+                            \nIf I get my money right\
+                            \nYou know I won't need you\
+                            \nAnd I tell you, (bitch)\
+                            \nI hope the sack is full up\
+                            \nI'm fuckin', no I'm fucked up\
+                            \nSpend it when I get that\
+                            \nI ain't trying to keep you\
+                            \nCan't keep up a conversation\
+                            \nCan't nobody reach you\
+                            \nWhy your eyes well up\
+                            \nDid you call me from a seance\
+                            \nYou are from a past life\
+                            \nHope you're…";
         
         self.songsList = [[NSMutableArray alloc]init];
         
@@ -70,13 +70,12 @@
         return self;
     }
 
-    -(Song *)getSongBy: (NSString *) songId {
+    -(Song *)getSongBy: (int)songIndex {
         
-        for(Song* song in self.songsList) {
-            if ([song.songId isEqualToString:songId]) {
-                return song;
-            }
-        };
+        Song* song = [self.songsList objectAtIndex:songIndex];
+        if (song != nil) {
+            return song;
+        }
         
         return nil;
     }
