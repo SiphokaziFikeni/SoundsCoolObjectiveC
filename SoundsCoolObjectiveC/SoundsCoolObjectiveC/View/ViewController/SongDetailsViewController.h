@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SongViewModel.h"
 
 @interface SongDetailsViewController : UIViewController
 
@@ -18,5 +19,9 @@
     @property (strong, nonatomic) IBOutlet UITextView *producerTextView;
     @property (strong, nonatomic) IBOutlet UITextView *recordLabelTextView;
     @property (strong, nonatomic) IBOutlet UITextView *lyricsTextView;
+    @property NSString* selectedSongIndex;
+    @property SongViewModel* songViewModel;
+
+    -(void)showSongDetails;
 
 @end

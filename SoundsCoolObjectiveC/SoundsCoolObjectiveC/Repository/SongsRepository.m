@@ -73,7 +73,7 @@
     -(Song *)getSongBy: (NSString *) songId {
         
         for(Song* song in self.songsList) {
-            if (song.songId == songId) {
+            if ([song.songId isEqualToString:songId]) {
                 return song;
             }
         };

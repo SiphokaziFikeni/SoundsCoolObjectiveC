@@ -94,7 +94,7 @@
                                             <outlet property="songAlbum" destination="m7K-3U-YM9" id="QLy-Mz-HmL"/>
                                             <outlet property="songArtImage" destination="HwH-Q0-Soz" id="wGW-wf-UPi"/>
                                             <outlet property="songTitle" destination="pcN-Ji-fnF" id="LUT-I6-aoT"/>
-                                            <segue destination="imw-f1-wMi" kind="push" id="078-to-BR2"/>
+                                            <segue destination="imw-f1-wMi" kind="show" identifier="ShowDetails" id="078-to-BR2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -127,7 +127,7 @@
         <!--Song Details-->
         <scene sceneID="cHi-Gv-kMV">
             <objects>
-                <viewController id="imw-f1-wMi" customClass="SongDetailsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="imw-f1-wMi" customClass="SongDetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CaU-FC-tgz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

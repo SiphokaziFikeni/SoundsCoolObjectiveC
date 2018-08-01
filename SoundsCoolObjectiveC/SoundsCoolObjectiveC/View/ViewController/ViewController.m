@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SongsCustomCell.h"
+#import "SongDetailsViewController.h"
 
 @interface ViewController ()
 
@@ -29,12 +30,24 @@
         
         static NSString *cellIdentfier = @"SongsTableViewCell";
         SongsCustomCell *cell = (SongsCustomCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentfier forIndexPath:indexPath];
+       
+        if (cell == nil) {
+            cell = [[SongsCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentfier];
+        }
+        
         [cell setCelldata:songsViewModel withIndex:indexPath.row];
         return cell;
     }
 
     - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
         return [songsViewModel amountOfSongs];
+    }
+
+    - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+        if ([[segue identifier] isEqualToString:@"ShowDetails"]) {
+            SongDetailsViewController* detailViewController = [segue destinationViewController];
+            detailViewController.selectedSongIndex = [NSString stringWithFormat:@"%ld", [songsTableView indexPathForSelectedRow].row];
+        }
     }
 
 @end

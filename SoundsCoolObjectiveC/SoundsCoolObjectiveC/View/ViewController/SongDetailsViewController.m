@@ -16,7 +16,8 @@
 
     - (void)viewDidLoad {
         [super viewDidLoad];
-        // Do any additional setup after loading the view.
+        self.songViewModel = [[SongViewModel alloc] init:self.selectedSongIndex];
+        [self showSongDetails];
     }
 
     - (void)didReceiveMemoryWarning {
@@ -24,14 +25,15 @@
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    #pragma mark - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    -(void)showSongDetails {
+        [self.albumImage setImage:[self.songViewModel image]];
+        [self.artistTextView setText:[self.songViewModel artist]];
+        [self.songTitleTextView setText:[self.songViewModel title]];
+        [self.albumTitleTextView setText:[self.songViewModel album]];
+        [self.yearTextView setText:[self.songViewModel releaseYear]];
+        [self.producerTextView setText:[self.songViewModel producer]];
+        [self.recordLabelTextView setText:[self.songViewModel recordCompany]];
+        [self.lyricsTextView setText:[self.songViewModel lyrics]];
     }
-    */
 
 @end
