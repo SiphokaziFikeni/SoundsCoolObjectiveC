@@ -21,6 +21,6 @@
     @property NSString* lyrics;
     @property UIImage* albumArt;
 
--(id)initWithSongDetails:(id)songId title: (NSString*)title artist: (NSString*)artist releaseYear: (NSString*)releaseYear album: (NSString*)album recordLabel: (NSString*)recordLabel producer: (NSString*)producer lyrics: (NSString*)lyrics albumArt: (UIImage*)albumArt;
+    -(id)initWithSongDetails:(id)songId title: (NSString*)title artist: (NSString*)artist releaseYear: (NSString*)releaseYear album: (NSString*)album recordLabel: (NSString*)recordLabel producer: (NSString*)producer lyrics: (NSString*)lyrics albumArt: (UIImage*)albumArt;
 
 @end

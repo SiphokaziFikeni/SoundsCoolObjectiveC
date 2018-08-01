@@ -10,25 +10,25 @@
 
 @implementation Song
 
--(id)initWithSongDetails:(id)songId title: (NSString*)title artist: (NSString*)artist releaseYear: (NSString*)releaseYear album: (NSString*)album recordLabel: (NSString*)recordLabel producer: (NSString*)producer lyrics: (NSString*)lyrics albumArt: (UIImage*)albumArt {
-    
-    if (songId == nil || title == nil || artist == nil || releaseYear == nil || recordLabel == nil || producer == nil) {
-        return nil;
+    -(id)initWithSongDetails:(id)songId title: (NSString*)title artist: (NSString*)artist releaseYear: (NSString*)releaseYear album: (NSString*)album recordLabel: (NSString*)recordLabel producer: (NSString*)producer lyrics: (NSString*)lyrics albumArt: (UIImage*)albumArt {
+        
+        if (songId == nil || title == nil || artist == nil || releaseYear == nil || recordLabel == nil || producer == nil) {
+            return nil;
+        }
+        
+        if (self = [super init]) {
+            self.songId = songId;
+            self.title = title;
+            self.artist = artist;
+            self.releaseYear = releaseYear;
+            self.album = album;
+            self.recordLabel = recordLabel;
+            self.producer = producer;
+            self.lyrics = lyrics;
+            self.albumArt = albumArt;
+        }
+        
+        return self;
     }
-    
-    if (self = [super init]) {
-        self.songId = songId;
-        self.title = title;
-        self.artist = artist;
-        self.releaseYear = releaseYear;
-        self.album = album;
-        self.recordLabel = recordLabel;
-        self.producer = producer;
-        self.lyrics = lyrics;
-        self.albumArt = albumArt;
-    }
-    
-    return self;
-}
 
 @end

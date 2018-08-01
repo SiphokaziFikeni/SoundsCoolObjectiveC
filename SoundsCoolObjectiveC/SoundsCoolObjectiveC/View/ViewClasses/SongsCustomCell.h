@@ -11,12 +11,11 @@
 
 @interface SongsCustomCell : UITableViewCell
 
-@property (strong, nonatomic) IBOutlet UIImageView *songArtImage;
-@property (strong, nonatomic) IBOutlet UILabel *songAlbum;
-@property (strong, nonatomic) IBOutlet UILabel *artistName;
-@property (strong, nonatomic) IBOutlet UILabel *songTitle;
+    @property (strong, nonatomic) IBOutlet UIImageView *songArtImage;
+    @property (strong, nonatomic) IBOutlet UILabel *songAlbum;
+    @property (strong, nonatomic) IBOutlet UILabel *artistName;
+    @property (strong, nonatomic) IBOutlet UILabel *songTitle;
 
-//- (void)setCelldata: (NSString *)songDetails;
-- (void)setCelldata: (SongsViewModel* )songsViewModel withIndex:(NSUInteger) index;
+    - (void)setCelldata: (SongsViewModel* )songsViewModel withIndex:(NSUInteger) index;
 
 @end

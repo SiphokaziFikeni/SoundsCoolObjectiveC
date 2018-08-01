@@ -15,27 +15,26 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    songsViewModel = [[SongsViewModel alloc] init];
-}
+    - (void)viewDidLoad {
+        [super viewDidLoad];
+        songsViewModel = [[SongsViewModel alloc] init];
+    }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+    - (void)didReceiveMemoryWarning {
+        [super didReceiveMemoryWarning];
+        // Dispose of any resources that can be recreated.
+    }
 
-- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    
-    static NSString *cellIdentfier = @"SongsTableViewCell";
-    SongsCustomCell *cell = (SongsCustomCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentfier forIndexPath:indexPath];
-    [cell setCelldata:songsViewModel withIndex:indexPath.row];
-    return cell;
-}
+    - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+        
+        static NSString *cellIdentfier = @"SongsTableViewCell";
+        SongsCustomCell *cell = (SongsCustomCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentfier forIndexPath:indexPath];
+        [cell setCelldata:songsViewModel withIndex:indexPath.row];
+        return cell;
+    }
 
-- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [songsViewModel amountOfSongs];
-}
-
+    - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+        return [songsViewModel amountOfSongs];
+    }
 
 @end

@@ -10,22 +10,22 @@
 
 @implementation SongsCustomCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
+    - (void)awakeFromNib {
+        [super awakeFromNib];
+        // Initialization code
+    }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-    // Configure the view for the selected state
-}
+    - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+        [super setSelected:selected animated:animated];
+        // Configure the view for the selected state
+    }
 
-- (void)setCelldata:(SongsViewModel*) songsViewModel withIndex:(NSUInteger) index {
-    
-    [self.artistName setText: [songsViewModel artistTextAt:index]];
-    [self.songTitle setText: [songsViewModel songTitleTextAt:index]];
-    [self.songAlbum setText: [songsViewModel formattedAlbumTextAt:index]];
-    [self.songArtImage setImage: [songsViewModel albumImageAt:index]];
-}
+    - (void)setCelldata:(SongsViewModel*) songsViewModel withIndex:(NSUInteger) index {
+        
+        [self.artistName setText: [songsViewModel artistTextAt:index]];
+        [self.songTitle setText: [songsViewModel songTitleTextAt:index]];
+        [self.songAlbum setText: [songsViewModel formattedAlbumTextAt:index]];
+        [self.songArtImage setImage: [songsViewModel albumImageAt:index]];
+    }
 
 @end

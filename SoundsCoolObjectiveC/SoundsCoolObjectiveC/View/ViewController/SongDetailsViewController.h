@@ -10,14 +10,13 @@
 
 @interface SongDetailsViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIImageView *albumImage;
-@property (strong, nonatomic) IBOutlet UITextView *artistTextView;
-@property (strong, nonatomic) IBOutlet UITextView *songTitleTextView;
-@property (strong, nonatomic) IBOutlet UITextView *albumTitleTextView;
-@property (strong, nonatomic) IBOutlet UITextView *yearTextView;
-@property (strong, nonatomic) IBOutlet UITextView *producerTextView;
-@property (strong, nonatomic) IBOutlet UITextView *recordLabelTextView;
-@property (strong, nonatomic) IBOutlet UITextView *lyricsTextView;
-
+    @property (strong, nonatomic) IBOutlet UIImageView *albumImage;
+    @property (strong, nonatomic) IBOutlet UITextView *artistTextView;
+    @property (strong, nonatomic) IBOutlet UITextView *songTitleTextView;
+    @property (strong, nonatomic) IBOutlet UITextView *albumTitleTextView;
+    @property (strong, nonatomic) IBOutlet UITextView *yearTextView;
+    @property (strong, nonatomic) IBOutlet UITextView *producerTextView;
+    @property (strong, nonatomic) IBOutlet UITextView *recordLabelTextView;
+    @property (strong, nonatomic) IBOutlet UITextView *lyricsTextView;
 
 @end

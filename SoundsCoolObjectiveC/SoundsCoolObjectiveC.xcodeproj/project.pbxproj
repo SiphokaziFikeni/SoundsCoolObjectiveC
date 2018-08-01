@@ -19,7 +19,6 @@
 		A0D73FEE210F2C13006CBC9E /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FED210F2C13006CBC9E /* Song.m */; };
 		A0D73FF1210F2C38006CBC9E /* SongsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FF0210F2C38006CBC9E /* SongsViewModel.m */; };
 		A0D73FF4210F2C4E006CBC9E /* SongViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FF3210F2C4E006CBC9E /* SongViewModel.m */; };
-		A0D73FF7210F2C5C006CBC9E /* Songs.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FF6210F2C5C006CBC9E /* Songs.m */; };
 		A0D73FFA210F2C84006CBC9E /* SongsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FF9210F2C84006CBC9E /* SongsRepository.m */; };
 		A0D73FFD210F2CC0006CBC9E /* SongDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D73FFC210F2CC0006CBC9E /* SongDetailsViewController.m */; };
 /* End PBXBuildFile section */
@@ -66,8 +65,6 @@
 		A0D73FF0210F2C38006CBC9E /* SongsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongsViewModel.m; sourceTree = "<group>"; };
 		A0D73FF2210F2C4E006CBC9E /* SongViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongViewModel.h; sourceTree = "<group>"; };
 		A0D73FF3210F2C4E006CBC9E /* SongViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongViewModel.m; sourceTree = "<group>"; };
-		A0D73FF5210F2C5C006CBC9E /* Songs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Songs.h; sourceTree = "<group>"; };
-		A0D73FF6210F2C5C006CBC9E /* Songs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Songs.m; sourceTree = "<group>"; };
 		A0D73FF8210F2C84006CBC9E /* SongsRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongsRepository.h; sourceTree = "<group>"; };
 		A0D73FF9210F2C84006CBC9E /* SongsRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongsRepository.m; sourceTree = "<group>"; };
 		A0D73FFB210F2CC0006CBC9E /* SongDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongDetailsViewController.h; sourceTree = "<group>"; };
@@ -158,8 +155,6 @@
 			children = (
 				A0D73FEC210F2C13006CBC9E /* Song.h */,
 				A0D73FED210F2C13006CBC9E /* Song.m */,
-				A0D73FF5210F2C5C006CBC9E /* Songs.h */,
-				A0D73FF6210F2C5C006CBC9E /* Songs.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -357,7 +352,6 @@
 				A0D73FEE210F2C13006CBC9E /* Song.m in Sources */,
 				A01687F92109FE1B002B1072 /* ViewController.m in Sources */,
 				A0D73FE4210EFE80006CBC9E /* SongsCustomCell.m in Sources */,
-				A0D73FF7210F2C5C006CBC9E /* Songs.m in Sources */,
 				A0D73FFA210F2C84006CBC9E /* SongsRepository.m in Sources */,
 				A0D73FFD210F2CC0006CBC9E /* SongDetailsViewController.m in Sources */,
 				A0D73FF1210F2C38006CBC9E /* SongsViewModel.m in Sources */,

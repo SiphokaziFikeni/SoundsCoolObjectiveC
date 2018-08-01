@@ -12,14 +12,14 @@
 
 @interface SongsViewModel : NSObject
 
-@property SongsRepository* songsRepo;
-@property NSMutableArray<Song*>* songsList;
+    @property SongsRepository* songsRepo;
+    @property NSMutableArray<Song*>* songsList;
 
--(id)init;
--(NSUInteger)amountOfSongs;
--(NSString*)formattedAlbumTextAt:(NSInteger)index;
--(NSString*)songTitleTextAt:(NSInteger)index;
--(NSString*)artistTextAt:(NSInteger)index;
--(UIImage*)albumImageAt:(NSInteger)index;
+    -(id)init;
+    -(NSUInteger)amountOfSongs;
+    -(NSString*)formattedAlbumTextAt:(NSInteger)index;
+    -(NSString*)songTitleTextAt:(NSInteger)index;
+    -(NSString*)artistTextAt:(NSInteger)index;
+    -(UIImage*)albumImageAt:(NSInteger)index;
 
 @end
