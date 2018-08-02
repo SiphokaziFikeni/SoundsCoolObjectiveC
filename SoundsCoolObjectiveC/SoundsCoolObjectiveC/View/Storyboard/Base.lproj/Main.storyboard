@@ -333,12 +333,19 @@ Hope you're…</string>
                     </navigationItem>
                     <connections>
                         <outlet property="albumImage" destination="gcf-VB-YTd" id="ttL-Ym-hhq"/>
+                        <outlet property="albumLabel" destination="vhb-CK-EHW" id="4ha-LN-FFo"/>
                         <outlet property="albumTitleTextView" destination="6ml-cT-UqZ" id="GaH-R1-8hN"/>
+                        <outlet property="artistLabel" destination="M9G-1N-9mf" id="cLQ-hY-KfT"/>
                         <outlet property="artistTextView" destination="LWM-Pw-qgn" id="4IG-Rr-3Lp"/>
+                        <outlet property="lyricsLabel" destination="C7m-7e-uFs" id="Nmb-AJ-req"/>
                         <outlet property="lyricsTextView" destination="lqw-Wz-l1Z" id="suI-36-M2c"/>
+                        <outlet property="producerLabel" destination="IWo-B5-Rpy" id="ibf-zG-Hn9"/>
                         <outlet property="producerTextView" destination="6TU-z4-YJ3" id="GFJ-z9-O0E"/>
+                        <outlet property="recordLabel" destination="rDQ-nC-w8o" id="3OY-VJ-yqv"/>
                         <outlet property="recordLabelTextView" destination="bzE-YF-HiE" id="oD9-Xs-Gs2"/>
+                        <outlet property="songLabel" destination="WfE-rU-yEF" id="Ol9-Bb-jTV"/>
                         <outlet property="songTitleTextView" destination="e3A-cI-dMB" id="aV4-Zp-d3T"/>
+                        <outlet property="yearLabel" destination="clN-J9-QrA" id="zGB-Ia-ZBc"/>
                         <outlet property="yearTextView" destination="OBV-Hl-r1b" id="4ly-TO-xRA"/>
                     </connections>
                 </viewController>

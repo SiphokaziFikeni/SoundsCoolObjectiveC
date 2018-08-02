@@ -17,6 +17,7 @@
     - (void)viewDidLoad {
         [super viewDidLoad];
         self.songViewModel = [[SongViewModel alloc] init:self.selectedSongIndex];
+        [self setLabelColor];
         [self showSongDetails];
     }
 
@@ -34,6 +35,20 @@
         [self.producerTextView setText:[self.songViewModel producer]];
         [self.recordLabelTextView setText:[self.songViewModel recordCompany]];
         [self.lyricsTextView setText:[self.songViewModel lyrics]];
+    }
+
+    -(UIColor*)getLabelTextColor {
+        return [UIColor orangeColor];
+    }
+
+    -(void)setLabelColor {
+        [self.artistLabel setTextColor:[self getLabelTextColor]];
+        [self.songLabel setTextColor:[self getLabelTextColor]];
+        [self.albumLabel setTextColor:[self getLabelTextColor]];
+        [self.yearLabel setTextColor:[self getLabelTextColor]];
+        [self.producerLabel setTextColor:[self getLabelTextColor]];
+        [self.recordLabel setTextColor:[self getLabelTextColor]];
+        [self.lyricsLabel setTextColor:[self getLabelTextColor]];
     }
 
 @end

@@ -21,7 +21,16 @@
     @property (strong, nonatomic) IBOutlet UITextView *lyricsTextView;
     @property int selectedSongIndex;
     @property SongViewModel* songViewModel;
+    @property (strong, nonatomic) IBOutlet UILabel *artistLabel;
+    @property (strong, nonatomic) IBOutlet UILabel *songLabel;
+    @property (strong, nonatomic) IBOutlet UILabel *albumLabel;
+    @property (strong, nonatomic) IBOutlet UILabel *yearLabel;
+    @property (strong, nonatomic) IBOutlet UILabel *producerLabel;
+    @property (strong, nonatomic) IBOutlet UILabel *recordLabel;
+    @property (strong, nonatomic) IBOutlet UILabel *lyricsLabel;
 
     -(void)showSongDetails;
+    -(UIColor*)getLabelTextColor;
+    -(void)setLabelColor;
 
 @end

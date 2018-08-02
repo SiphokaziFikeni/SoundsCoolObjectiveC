@@ -10,8 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "SongsViewModel.h"
 
-@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
-{
+@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate> {
 
     IBOutlet UITableView *songsTableView;
     NSMutableArray *songArray;
